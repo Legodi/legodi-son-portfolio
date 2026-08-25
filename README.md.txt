@@ -80,3 +80,29 @@ Class timetable, payment integration, progress reports, virtual classroom links.
 ---
 
 ## 📂 Repository Structure
+
+---
+
+## 🚀 Live Demo
+
+Visit the live GitHub Pages site:  
+👉 **[https://legodi.github.io/legodi-son-portfolio/](https://legodi.github.io/legodi-son-portfolio/)**
+
+---
+
+## 📞 Contact
+
+- **Email:** [your-email@example.com](mailto:your-email@example.com)
+- **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+- **GitHub:** [github.com/Legodi](https://github.com/Legodi)
+- **Shop Address:** [Your physical shop address]
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+© 2026 Legodi & Son – Building digital trust, one solution at a time.

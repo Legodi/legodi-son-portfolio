@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Case Study – Legodi & Son</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        :root { --navy: #0a2b3e; --orange: #e67e22; }
+        body { font-family: 'Segoe UI', sans-serif; background: #f8fafc; }
+        .navbar { background-color: var(--navy) !important; }
+        .btn-orange { background-color: var(--orange); border: none; color: white; padding: 0.5rem 1.5rem; border-radius: 50px; }
+        .btn-orange:hover { background-color: #c85d17; color: white; }
+        footer { background-color: var(--navy); color: white; padding: 1.5rem 0; }
+        .text-orange { color: var(--orange); }
+        .section-title { border-left: 5px solid var(--orange); padding-left: 1rem; }
+        .case-study-card { background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+        .nav-link.active { font-weight: 700; color: var(--orange) !important; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .feature-item { background: #f8fafc; padding: 1rem; border-radius: 12px; border-left: 4px solid var(--orange); }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-microchip me-2"></i>Legodi & Son</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="case-study-education.html">Education Case Study</a></li>
+                <li class="nav-item"><a class="nav-link" href="case-study-public-sector.html">Public Sector Case Study</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container py-5">
+    <h1 class="section-title mb-4">Case Study: Government School Digital Transformation</h1>
+    <p class="lead mb-4">A complete digital solution for 1,400+ learners, teachers, and parents – fully compliant with South African education regulations.</p>
+
+    <div class="row g-4">
+        <div class="col-md-8">
+            <div class="case-study-card">
+                <h3><i class="fas fa-school text-orange"></i> The Challenge</h3>
+                <p>A government school in Cape Town with over 1,400 learners had no central digital presence. Manual processes for applications, reporting, and communication caused inefficiencies and delays. The school needed a secure, compliant, and modern system to improve stakeholder engagement and attract sponsors.</p>
+
+                <h3 class="mt-4"><i class="fas fa-lightbulb text-orange"></i> The Solution</h3>
+                <p>We designed and built a comprehensive ASP.NET MVC web application with five integrated portals:</p>
+                <div class="feature-grid">
+                    <div class="feature-item"><strong>🏛️ Public Website</strong><br>School information, news, events, online applications, sponsor showcase</div>
+                    <div class="feature-item"><strong>👨‍🏫 Teacher Portal</strong><br>Manage learners, create reports, post assignments, communicate with parents</div>
+                    <div class="feature-item"><strong>👨‍👩‍👧‍👦 Parent Portal</strong><br>View children's profiles, grades, reports, assignments, submit consent forms</div>
+                    <div class="feature-item"><strong>🎒 Learner Portal</strong><br>View assignments, submit work online, access learning materials</div>
+                    <div class="feature-item"><strong>⚙️ Administrator Portal</strong><br>Manage users, process applications, generate reports, track donations</div>
+                </div>
+
+                <h3 class="mt-4"><i class="fas fa-chart-line text-orange"></i> The Results</h3>
+                <div class="row text-center mt-3">
+                    <div class="col-6 col-md-3"><h2 class="text-orange">1,400+</h2><p>Learners Served</p></div>
+                    <div class="col-6 col-md-3"><h2 class="text-orange">5</h2><p>Integrated Portals</p></div>
+                    <div class="col-6 col-md-3"><h2 class="text-orange">100%</h2><p>POPIA Compliant</p></div>
+                    <div class="col-6 col-md-3"><h2 class="text-orange">100%</h2><p>WCED Compliant</p></div>
+                </div>
+
+                <h3 class="mt-4"><i class="fas fa-check-circle text-orange"></i> Compliance Achieved</h3>
+                <ul>
+                    <li><strong>POPIA</strong> – consent management, data security, subject access rights</li>
+                    <li><strong>PAIA</strong> – manual availability, request handling procedures</li>
+                    <li><strong>WCED Policies</strong> – bullying reporting, admission procedures</li>
+                    <li><strong>BELA Act 2024</strong> – updated admissions and language policies</li>
+                    <li><strong>WCAG 2.2 Level A</strong> – accessibility for users with disabilities</li>
+                </ul>
+                <div class="mt-3">
+                    <span class="badge bg-dark me-1">ASP.NET MVC</span>
+                    <span class="badge bg-dark me-1">C#</span>
+                    <span class="badge bg-dark me-1">SQL Server</span>
+                    <span class="badge bg-dark me-1">Bootstrap 5</span>
+                    <span class="badge bg-dark me-1">jQuery</span>
+                    <span class="badge bg-dark me-1">IIS 10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="case-study-card text-center">
+                <img src="docs/screenshots/education-dashboard.png" class="img-fluid rounded shadow" alt="Education Dashboard" onerror="this.src='https://placehold.co/400x300/0a2b3e/white?text=Education+Dashboard'" />
+                <h5 class="mt-3">School Management Portal</h5>
+                <p><strong>1,400+ Learners</strong> | Grade R – 7</p>
+            </div>
+            <div class="case-study-card mt-4">
+                <h5><i class="fas fa-trophy text-orange"></i> Key Differentiators</h5>
+                <ul>
+                    <li>Full POPIA & PAIA compliance</li>
+                    <li>5 integrated portals in one system</li>
+                    <li>WCAG 2.2 accessibility compliant</li>
+                    <li>BELA Act 2024 ready</li>
+                    <li>Scalable to any school size</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container text-center">
+        <small>&copy; 2026 Legodi & Son – Built with ASP.NET MVC | POPIA Certified | Commissioner of Oaths</small>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

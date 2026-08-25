@@ -7,227 +7,163 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
-        :root {
-            --navy: #0a2b3e;
-            --orange: #e67e22;
-        }
-        body {
-            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: #f8fafc;
-        }
-        .navbar {
-            background-color: var(--navy) !important;
-        }
-        .btn-orange {
-            background-color: var(--orange);
-            border: none;
-            color: white;
-            padding: 0.5rem 1.5rem;
-            border-radius: 50px;
-        }
-        .btn-orange:hover {
-            background-color: #c85d17;
-            color: white;
-        }
-        .card {
-            transition: transform 0.3s;
-            border: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-        }
-        .card-img-top {
-            height: 200px;
-            object-fit: cover;
-            background: var(--navy);
-        }
-        .section-title {
-            border-left: 5px solid var(--orange);
-            padding-left: 1rem;
-        }
-        footer {
-            background-color: var(--navy);
-            color: white;
-            padding: 1.5rem 0;
-        }
-        .text-orange {
-            color: var(--orange);
-        }
-        .nav-link.active {
-            font-weight: 700;
-            color: var(--orange) !important;
-        }
+        :root { --navy: #0a2b3e; --orange: #e67e22; }
+        body { font-family: 'Segoe UI', sans-serif; background: #f8fafc; }
+        .navbar { background-color: var(--navy) !important; }
+        .btn-orange { background-color: var(--orange); border: none; color: white; padding: 0.5rem 1.5rem; border-radius: 50px; }
+        .btn-orange:hover { background-color: #c85d17; color: white; }
+        .card { transition: transform 0.3s; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+        .card-img-top { height: 200px; object-fit: cover; background: var(--navy); }
+        .section-title { border-left: 5px solid var(--orange); padding-left: 1rem; }
+        footer { background-color: var(--navy); color: white; padding: 1.5rem 0; }
+        .text-orange { color: var(--orange); }
+        .nav-link.active { font-weight: 700; color: var(--orange) !important; }
     </style>
 </head>
 <body>
 
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="/"><i class="fas fa-microchip me-2"></i>Legodi & Son</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/case-study-council.html">Case Study</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container py-5">
-        <h1 class="section-title mb-4">Our Portfolio</h1>
-        <p class="lead mb-4">Custom ASP.NET solutions for traditional councils and township businesses.</p>
-
-        <div class="row g-4">
-
-            <!-- Traditional Council -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://placehold.co/400x200/0a2b3e/white?text=Moletsi+Council" class="card-img-top" alt="Moletsi Council" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-landmark text-orange"></i> Moletsi Council</h5>
-                        <p>ASP.NET website with admin dashboard, document library, event calendar.</p>
-                        <a href="/case-study-council.html" class="btn btn-orange btn-sm">View Case Study</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Spaza Shop -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://placehold.co/400x200/0a2b3e/white?text=Spaza+Shop" class="card-img-top" alt="Spaza Shop" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-store text-orange"></i> Spaza Shop Management</h5>
-                        <p>Stock management, low-stock alerts, loyalty programmes, WhatsApp ordering.</p>
-                        <a href="#" class="btn btn-orange btn-sm">View Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hair Salon -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://placehold.co/400x200/0a2b3e/white?text=Hair+Salon" class="card-img-top" alt="Hair Salon" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-cut text-orange"></i> Hair Salon Booking</h5>
-                        <p>Online booking, stylist selection, portfolio gallery, SMS/WhatsApp reminders.</p>
-                        <a href="#" class="btn btn-orange btn-sm">View Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Fast Food -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://placehold.co/400x200/0a2b3e/white?text=Fast+Food" class="card-img-top" alt="Fast Food" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-utensils text-orange"></i> Fast Food / Kota</h5>
-                        <p>Online ordering, real‑time tracking, daily specials, kitchen display integration.</p>
-                        <a href="#" class="btn btn-orange btn-sm">View Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Car Wash -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://placehold.co/400x200/0a2b3e/white?text=Car+Wash" class="card-img-top" alt="Car Wash" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-car text-orange"></i> Car Wash Management</h5>
-                        <p>Subscription management, time‑slot booking, fleet wash, loyalty credits.</p>
-                        <a href="#" class="btn btn-orange btn-sm">View Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Fashion -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://placehold.co/400x200/0a2b3e/white?text=Fashion" class="card-img-top" alt="Fashion" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-tshirt text-orange"></i> Fashion Designer</h5>
-                        <p>E‑commerce with measurements, lookbooks, deposits, courier integration.</p>
-                        <a href="#" class="btn btn-orange btn-sm">View Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Backyard Rentals -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://placehold.co/400x200/0a2b3e/white?text=Backyard+Rentals" class="card-img-top" alt="Backyard Rentals" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-home text-orange"></i> Backyard Rentals</h5>
-                        <p>Room listings, booking calendar, tenant screening, maintenance requests.</p>
-                        <a href="#" class="btn btn-orange btn-sm">View Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Logistics -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://placehold.co/400x200/0a2b3e/white?text=Logistics" class="card-img-top" alt="Logistics" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-shipping-fast text-orange"></i> Logistics</h5>
-                        <p>Parcel tracking, driver assignment, proof of delivery, customer notifications.</p>
-                        <a href="#" class="btn btn-orange btn-sm">View Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Auto Repair -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://placehold.co/400x200/0a2b3e/white?text=Auto+Repair" class="card-img-top" alt="Auto Repair" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-wrench text-orange"></i> Auto Repair</h5>
-                        <p>Service booking, inspection reports, quotation builder, parts inventory.</p>
-                        <a href="#" class="btn btn-orange btn-sm">View Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Events & DJs -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://placehold.co/400x200/0a2b3e/white?text=Events+%26+DJs" class="card-img-top" alt="Events & DJs" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-music text-orange"></i> Events &amp; DJs</h5>
-                        <p>Equipment catalogue, quote generation, client portal, song requests.</p>
-                        <a href="#" class="btn btn-orange btn-sm">View Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tutoring -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://placehold.co/400x200/0a2b3e/white?text=Tutoring" class="card-img-top" alt="Tutoring" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-chalkboard-teacher text-orange"></i> Tutoring</h5>
-                        <p>Class timetable, payment integration, progress reports, virtual classroom.</p>
-                        <a href="#" class="btn btn-orange btn-sm">View Demo</a>
-                    </div>
-                </div>
-            </div>
-
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-microchip me-2"></i>Legodi & Son</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="case-study-council.html">Case Study</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            </ul>
         </div>
     </div>
+</nav>
 
-    <footer>
-        <div class="container text-center">
-            <small>&copy; 2026 Legodi &amp; Son – Built with ASP.NET Core | POPIA Certified | Commissioner of Oaths</small>
+<div class="container py-5">
+    <h1 class="section-title mb-4">Our Portfolio</h1>
+    <p class="lead mb-4">Custom ASP.NET solutions for traditional councils and township businesses.</p>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://placehold.co/400x200/0a2b3e/white?text=Moletsi+Council" class="card-img-top" alt="Moletsi Council" />
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-landmark text-orange"></i> Moletsi Council</h5>
+                    <p>ASP.NET website with admin dashboard, document library, event calendar.</p>
+                    <a href="case-study-council.html" class="btn btn-orange btn-sm">View Case Study</a>
+                </div>
+            </div>
         </div>
-    </footer>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://placehold.co/400x200/0a2b3e/white?text=Spaza+Shop" class="card-img-top" alt="Spaza Shop" />
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-store text-orange"></i> Spaza Shop Management</h5>
+                    <p>Stock management, low-stock alerts, loyalty, WhatsApp ordering.</p>
+                    <a href="#" class="btn btn-orange btn-sm">View Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://placehold.co/400x200/0a2b3e/white?text=Hair+Salon" class="card-img-top" alt="Hair Salon" />
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-cut text-orange"></i> Hair Salon Booking</h5>
+                    <p>Online booking, stylist selection, portfolio gallery, SMS/WhatsApp reminders.</p>
+                    <a href="#" class="btn btn-orange btn-sm">View Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://placehold.co/400x200/0a2b3e/white?text=Fast+Food" class="card-img-top" alt="Fast Food" />
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-utensils text-orange"></i> Fast Food / Kota</h5>
+                    <p>Online ordering, real‑time tracking, daily specials, kitchen display.</p>
+                    <a href="#" class="btn btn-orange btn-sm">View Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://placehold.co/400x200/0a2b3e/white?text=Car+Wash" class="card-img-top" alt="Car Wash" />
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-car text-orange"></i> Car Wash Management</h5>
+                    <p>Subscription management, time‑slot booking, fleet wash, loyalty credits.</p>
+                    <a href="#" class="btn btn-orange btn-sm">View Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://placehold.co/400x200/0a2b3e/white?text=Fashion" class="card-img-top" alt="Fashion" />
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-tshirt text-orange"></i> Fashion Designer</h5>
+                    <p>E‑commerce with measurements, lookbooks, deposits, courier integration.</p>
+                    <a href="#" class="btn btn-orange btn-sm">View Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://placehold.co/400x200/0a2b3e/white?text=Backyard+Rentals" class="card-img-top" alt="Backyard Rentals" />
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-home text-orange"></i> Backyard Rentals</h5>
+                    <p>Room listings, booking calendar, tenant screening, maintenance requests.</p>
+                    <a href="#" class="btn btn-orange btn-sm">View Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://placehold.co/400x200/0a2b3e/white?text=Logistics" class="card-img-top" alt="Logistics" />
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-shipping-fast text-orange"></i> Logistics</h5>
+                    <p>Parcel tracking, driver assignment, proof of delivery, customer notifications.</p>
+                    <a href="#" class="btn btn-orange btn-sm">View Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://placehold.co/400x200/0a2b3e/white?text=Auto+Repair" class="card-img-top" alt="Auto Repair" />
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-wrench text-orange"></i> Auto Repair</h5>
+                    <p>Service booking, inspection reports, quotation builder, parts inventory.</p>
+                    <a href="#" class="btn btn-orange btn-sm">View Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://placehold.co/400x200/0a2b3e/white?text=Events+%26+DJs" class="card-img-top" alt="Events & DJs" />
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-music text-orange"></i> Events & DJs</h5>
+                    <p>Equipment catalogue, quote generation, client portal, song requests.</p>
+                    <a href="#" class="btn btn-orange btn-sm">View Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://placehold.co/400x200/0a2b3e/white?text=Tutoring" class="card-img-top" alt="Tutoring" />
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-chalkboard-teacher text-orange"></i> Tutoring</h5>
+                    <p>Class timetable, payment integration, progress reports, virtual classroom.</p>
+                    <a href="#" class="btn btn-orange btn-sm">View Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<footer>
+    <div class="container text-center">
+        <small>&copy; 2026 Legodi & Son – Built with ASP.NET Core | POPIA Certified | Commissioner of Oaths</small>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -24,22 +24,19 @@
             font-weight: 700;
             font-size: 1.4rem;
         }
-        /* ----- HERO WITH BACKGROUND IMAGE ----- */
+
+        /* ===== HERO – IMAGE ONLY ===== */
         .hero {
-            /* Fallback gradient */
-            background: linear-gradient(135deg, #0a2b3e 0%, #1e4a6b 100%);
-            /* Image + overlay */
-            background-image: linear-gradient(rgba(10, 43, 62, 0.75), rgba(10, 43, 62, 0.75)),
-                              url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&q=80');
+            background-color: #0a2b3e; /* solid fallback if image fails */
+            background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&q=80');
             background-size: cover;
             background-position: center center;
-            background-blend-mode: overlay;
             color: white;
             padding: 4rem 0;
         }
-        /* If you have your own image, replace the URL above with:
-           url('assets/images/hero-bg.jpg')
-        */
+        /* If you have your own image, replace the URL with:
+           url('assets/images/hero-bg.jpg') */
+
         .hero h1 {
             font-size: 3rem;
             font-weight: 800;
@@ -129,7 +126,7 @@
     </div>
 </nav>
 
-<!-- ===== HERO WITH IMAGE ===== -->
+<!-- ===== HERO ===== -->
 <section class="hero">
     <div class="container">
         <div class="row align-items-center">

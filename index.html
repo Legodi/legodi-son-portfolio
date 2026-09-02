@@ -23,16 +23,21 @@
         .navbar-brand {
             font-weight: 700;
             font-size: 1.4rem;
+            display: flex;
+            align-items: center;
         }
-
+        .navbar-brand img {
+            height: 30px;
+            margin-right: 8px;
+        }
         .hero {
+            background-color: #0a2b3e;
             background-image: url('assets/images/hero-bg.jpg');
             background-size: cover;
             background-position: center center;
             color: white;
             padding: 4rem 0;
         }
-        
         .hero h1 {
             font-size: 3rem;
             font-weight: 800;
@@ -103,10 +108,13 @@
 </head>
 <body>
 
-<!-- ===== NAVBAR ===== -->
+<!-- ===== NAVBAR WITH LOGO ===== -->
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.html"><i class="fas fa-microchip me-2"></i>Legodi & Son</a>
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.png" alt="Legodi & Son Logo" class="d-inline-block align-top" onerror="this.onerror=null; this.src='https://placehold.co/30x30/0a2b3e/white?text=L&S'">
+            Legodi & Son
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
